@@ -15,7 +15,7 @@ def display_game():
 def position():
  choice = "sometext"
  accrange = list(range(1,10))
- print(accrange)
+ print("accceptable values = {}".format(accrange))
  withinrange = False
 
  while choice.isdigit() == False or withinrange == False:
@@ -30,7 +30,6 @@ def position():
     print("input is digit but not in correct range")
   else:
    print("not a digit, please correct it")
-
  return int(choice)
 
 def update(val):
