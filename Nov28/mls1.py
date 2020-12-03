@@ -60,6 +60,9 @@ def checkwinner():
   exit()
  else :
   pass
+ if itr == 8:
+  print("its a draw ")
+  exit()
 
 display_game()
 itr = 0
