@@ -1,0 +1,40 @@
+gameon = True
+count = 0
+
+while gameon:
+ count += 1
+ print(count)
+
+ if player1.playercards == 0:
+  print("{} is winner".format(player2.name))
+  gameon = False
+  break
+
+ if player2.playercards == 0:
+  print("{} is winner".format(player1.name))
+  gameon = False
+  break
+
+ print(player1)
+ print(player2)
+
+ ptmp1 = []
+ ptmp2 = []
+
+ print(type(ptmp1))
+ print(type(ptmp2))
+
+ ptmp1.append(player1.removeone())
+ print(ptmp1[0])
+ ptmp2.append(player2.removeone())
+ print(ptmp2[0])
+
+ print(type(ptmp1))
+ print(type(ptmp2))
+
+ atwar = True
+ while atwar:
+  print(ptmp1.value)
+  print(ptmp2.value)
+  input()
+
